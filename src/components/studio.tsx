@@ -2,7 +2,10 @@ import { Reveal } from "./reveal";
 
 export function Studio() {
   return (
-    <section id="studio" className="border-t border-border bg-background py-24 sm:py-28 lg:py-32">
+    <section
+      id="studio"
+      className="border-t border-border bg-background py-24 sm:py-28 lg:flex lg:min-h-[calc(100svh-var(--site-header-height))] lg:items-center lg:py-32"
+    >
       <div className="mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex items-center justify-center gap-3 sm:mb-10">
           <span className="flex h-7 min-w-7 items-center justify-center rounded-full border border-border bg-secondary px-2 text-[11px] font-semibold text-secondary-foreground">

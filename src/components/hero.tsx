@@ -64,7 +64,7 @@ export function Hero() {
     <>
       <section
         id="top"
-        className="ambient-glow relative flex min-h-dvh flex-col overflow-hidden bg-background pt-24 pb-14"
+        className="ambient-glow relative z-10 flex min-h-dvh flex-col overflow-hidden bg-background pt-24 pb-14"
       >
         <header className="fixed inset-x-0 top-0 z-40 border-b border-border bg-background/80 backdrop-blur-xl supports-[backdrop-filter]:bg-background/60">
           <nav className="mx-auto flex w-full max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">

@@ -4,7 +4,7 @@ export function About() {
   return (
     <section
       id="about"
-      className="ambient-glow relative border-t border-border bg-background py-24 sm:py-28 lg:py-32"
+      className="ambient-glow relative border-t border-border bg-background py-24 sm:py-28 lg:flex lg:min-h-[calc(100svh-var(--site-header-height))] lg:items-center lg:py-32"
     >
       <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-20 lg:px-8">
         <Reveal>

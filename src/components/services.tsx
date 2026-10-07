@@ -24,7 +24,7 @@ export function Services() {
   return (
     <section
       id="services"
-      className="ambient-glow relative flex min-h-[80svh] items-center justify-center overflow-hidden border-t border-border bg-background py-24"
+      className="ambient-glow relative flex min-h-[80svh] items-center justify-center overflow-hidden border-t border-border bg-background py-24 lg:min-h-[calc(100svh-var(--site-header-height))]"
     >
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="mb-12 text-center sm:mb-16">

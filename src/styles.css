@@ -2,6 +2,7 @@
 
 :root {
   color-scheme: dark;
+  --site-header-height: 4.3125rem;
   --background: #0b0a10;
   --foreground: #f5f3fa;
   --card: #121118;
@@ -58,6 +59,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--site-header-height);
 }
 
 body {
@@ -137,6 +139,21 @@ footer :focus-visible {
   background-color: currentColor;
   -webkit-mask: url("/logo.svg") center / contain no-repeat;
   mask: url("/logo.svg") center / contain no-repeat;
+}
+
+@media (min-width: 64rem) and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-snap-type: y proximity;
+  }
+
+  #top,
+  #studio,
+  #services,
+  #work,
+  #trips,
+  #about {
+    scroll-snap-align: start;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

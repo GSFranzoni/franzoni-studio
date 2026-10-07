@@ -19,9 +19,9 @@ export function Studio() {
 
         <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2 md:gap-12">
           <p className="max-w-xl text-[16px] font-medium leading-[1.75] text-foreground sm:text-[18px]">
-            Franzoni Studio is an independent software studio by Guilherme Franzoni, built around a
-            simple idea: good digital products should feel as considered as they are well
-            engineered.
+            Franzoni Studio is an independent software and product studio founded by Guilherme
+            Franzoni, built around a simple idea: good digital products should feel as considered as
+            they are well engineered.
           </p>
           <p className="max-w-xl text-[15px] leading-[1.75] text-muted-foreground sm:text-[17px]">
             I work across design and engineering to turn ideas into websites, software, and digital

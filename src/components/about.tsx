@@ -15,18 +15,36 @@ export function About() {
             </span>
           </div>
           <h2 className="text-[clamp(2rem,5vw,4.2rem)] font-semibold leading-[1.05] tracking-[-0.04em] text-foreground">
-            Hi, I&apos;m Guilherme.
+            Built by a software engineer, not a committee.
           </h2>
         </div>
         <div className="max-w-2xl rounded-xl border border-border bg-card/70 p-6 backdrop-blur-sm sm:p-8 lg:p-10">
           <p className="text-[17px] font-medium leading-[1.7] text-foreground sm:text-[19px]">
-            I&apos;m a full-stack software engineer who enjoys working across the whole product —
-            from the details of an interface to the systems behind it.
+            Franzoni Studio was founded by Guilherme Franzoni, a full-stack software engineer with
+            6+ years of experience building products for the web.
           </p>
           <p className="mt-5 text-[15px] leading-[1.7] text-muted-foreground sm:text-[17px]">
-            Franzoni Studio is where I bring together engineering, design, and experimentation to
-            build things for the web.
+            His work spans product engineering, frontend, backend, real-time systems, and AI-powered
+            applications.
           </p>
+          <figure className="mt-9 flex items-center gap-5 sm:mt-10">
+            <img
+              src="/gui.jpg"
+              alt="Guilherme Franzoni"
+              className="h-20 w-20 shrink-0 rounded-lg object-cover sm:h-24 sm:w-24"
+              width="400"
+              height="400"
+              loading="lazy"
+            />
+            <figcaption>
+              <span className="block text-[16px] font-semibold tracking-[-0.02em] text-foreground sm:text-[18px]">
+                Guilherme Franzoni
+              </span>
+              <span className="mt-1 block text-[13px] text-muted-foreground sm:text-[14px]">
+                Founder &amp; Software Engineer
+              </span>
+            </figcaption>
+          </figure>
           {/* TODO: Add verified GitHub and LinkedIn profile URLs when available. */}
         </div>
       </div>

@@ -1,4 +1,5 @@
 import { FranzoniMark, OrangeButton } from "./primitives";
+import { Reveal } from "./reveal";
 
 const FOOTER_LINKS = [
   { label: "Studio", href: "#studio" },
@@ -18,7 +19,7 @@ export function Footer() {
     <footer id="contact" className="bg-card text-foreground">
       <div className="mx-auto w-full max-w-[1440px] px-5 py-16 sm:px-8 sm:py-20 lg:px-12 lg:py-24">
         <div className="flex flex-col gap-8 pb-12 sm:pb-16 lg:flex-row lg:items-end lg:justify-between lg:pb-20">
-          <div className="max-w-2xl">
+          <Reveal className="max-w-2xl">
             <p className="mb-5 text-[12px] font-medium uppercase tracking-[0.14em] text-muted-foreground sm:mb-8 sm:text-[13px]">
               Have something in mind?
             </p>
@@ -28,9 +29,12 @@ export function Footer() {
             <p className="mt-5 max-w-xl text-[14px] leading-[1.7] text-muted-foreground sm:text-[16px]">
               Have a website, product, or idea you&apos;d like to build? Tell me about it.
             </p>
-          </div>
+          </Reveal>
 
-          <div className="flex flex-col items-start gap-4 sm:flex-row sm:items-center lg:flex-col lg:items-end">
+          <Reveal
+            delay={0.14}
+            className="flex flex-col items-start gap-4 sm:flex-row sm:items-center lg:flex-col lg:items-end"
+          >
             <OrangeButton label="Start a project" href="mailto:guilherme@franzoni.tech" />
             <a
               href="mailto:guilherme@franzoni.tech"
@@ -38,7 +42,7 @@ export function Footer() {
             >
               guilherme@franzoni.tech
             </a>
-          </div>
+          </Reveal>
         </div>
 
         <div className="flex flex-col gap-8 py-10 sm:flex-row sm:items-center sm:justify-between sm:py-12">
@@ -74,7 +78,6 @@ export function Footer() {
             ))}
           </nav>
         </div>
-
       </div>
     </footer>
   );

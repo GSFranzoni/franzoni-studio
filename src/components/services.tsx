@@ -1,3 +1,7 @@
+import * as m from "motion/react-m";
+
+import { Reveal } from "./reveal";
+
 const SERVICES = [
   {
     title: "Websites",
@@ -32,24 +36,29 @@ export function Services() {
               What I do
             </span>
           </div>
-          <h2 className="mx-auto max-w-3xl text-[clamp(2rem,5vw,4rem)] font-semibold leading-[1.04] tracking-[-0.04em] text-foreground">
-            From the first idea to the final build.
-          </h2>
+          <Reveal>
+            <h2 className="mx-auto max-w-3xl text-[clamp(2rem,5vw,4rem)] font-semibold leading-[1.04] tracking-[-0.04em] text-foreground">
+              From the first idea to the final build.
+            </h2>
+          </Reveal>
         </div>
 
         <div className="grid gap-4 md:grid-cols-3 md:gap-5">
-          {SERVICES.map((service) => (
-            <article
-              key={service.title}
-              className="rounded-xl border border-border bg-card/70 p-6 backdrop-blur-sm transition-colors duration-300 hover:border-primary/30 hover:bg-accent/60 sm:p-8"
-            >
-              <h3 className="text-[22px] font-semibold tracking-[-0.025em] text-foreground sm:text-2xl">
-                {service.title}
-              </h3>
-              <p className="mt-4 max-w-sm text-[15px] leading-[1.7] text-muted-foreground sm:text-base">
-                {service.description}
-              </p>
-            </article>
+          {SERVICES.map((service, index) => (
+            <Reveal key={service.title} delay={index * 0.09} className="h-full">
+              <m.article
+                whileHover={{ y: -5 }}
+                transition={{ type: "spring", stiffness: 320, damping: 24 }}
+                className="h-full rounded-xl border border-border bg-card/70 p-6 backdrop-blur-sm transition-colors duration-300 hover:border-primary/30 hover:bg-accent/60 sm:p-8"
+              >
+                <h3 className="text-[22px] font-semibold tracking-[-0.025em] text-foreground sm:text-2xl">
+                  {service.title}
+                </h3>
+                <p className="mt-4 max-w-sm text-[15px] leading-[1.7] text-muted-foreground sm:text-base">
+                  {service.description}
+                </p>
+              </m.article>
+            </Reveal>
           ))}
         </div>
       </div>

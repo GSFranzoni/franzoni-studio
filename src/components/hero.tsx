@@ -7,6 +7,7 @@ import { Menu, X } from "lucide-react";
 import { cn } from "cn";
 
 import { FranzoniMark, OrangeButton } from "./primitives";
+import { Reveal } from "./reveal";
 
 const NAV_LINKS = [
   { label: "Studio", href: "#studio" },
@@ -106,17 +107,23 @@ export function Hero() {
 
         <div className="relative z-10 mx-auto flex w-full max-w-7xl flex-1 flex-col items-center justify-center px-5 text-center sm:px-8 lg:px-12">
           <div className="w-full">
-            <span className="mb-6 block text-[12px] font-medium tracking-[0.2em] text-muted-foreground sm:text-[13px]">
-              FRANZONI STUDIO
-            </span>
-            <h1 className="mx-auto max-w-6xl text-[clamp(2.5rem,7.2vw,6.75rem)] font-semibold leading-[0.98] tracking-[-0.045em] text-foreground">
-              Software, websites, and digital experiences <br className="hidden sm:block" />
-              built with care.
-            </h1>
+            <Reveal delay={0.05} distance={16}>
+              <span className="mb-6 block text-[12px] font-medium tracking-[0.2em] text-muted-foreground sm:text-[13px]">
+                FRANZONI STUDIO
+              </span>
+            </Reveal>
+            <Reveal delay={0.17} distance={42}>
+              <h1 className="mx-auto max-w-6xl text-[clamp(2.5rem,7.2vw,6.75rem)] font-semibold leading-[0.98] tracking-[-0.045em] text-foreground">
+                Software, websites, and digital experiences <br className="hidden sm:block" />
+                built with care.
+              </h1>
+            </Reveal>
 
-            <div className="mt-10 flex flex-col items-center gap-4">
-              <OrangeButton label="Start a project" href="#contact" />
-            </div>
+            <Reveal delay={0.36} distance={20}>
+              <div className="mt-10 flex flex-col items-center gap-4">
+                <OrangeButton label="Start a project" href="#contact" />
+              </div>
+            </Reveal>
           </div>
         </div>
       </section>

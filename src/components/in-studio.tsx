@@ -1,4 +1,5 @@
 import tripsScreenshot from "../assets/desktop-trip.png";
+import { Reveal } from "./reveal";
 
 export function InStudio() {
   return (
@@ -13,8 +14,50 @@ export function InStudio() {
           </span>
         </div>
 
-        <div className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16">
-          <div className="flex flex-col items-start">
+        <article className="grid items-center gap-10 sm:gap-12 lg:grid-cols-[1.22fr_0.78fr] lg:gap-16">
+          <Reveal className="flex flex-col items-start lg:order-2" delay={0.12}>
+            <p className="text-[12px] font-semibold tracking-[0.2em] text-violet-300 sm:text-[13px]">
+              INTERVUE
+            </p>
+            <h2 className="mt-5 max-w-lg text-[clamp(2rem,5vw,4.4rem)] font-semibold leading-[1.04] tracking-[-0.04em] text-foreground">
+              Practice the interview before it matters.
+            </h2>
+            <div className="mt-6 max-w-md space-y-5 sm:mt-7">
+              <p className="text-[14px] leading-[1.8] text-muted-foreground sm:text-[16px]">
+                An AI-powered interview experience that turns real job requirements into
+                personalized conversations, adaptive follow-up questions, and structured feedback.
+              </p>
+              <p className="text-[13px] font-medium leading-relaxed text-foreground/75 sm:text-[14px]">
+                Designed and built at Franzoni Studio.
+              </p>
+            </div>
+            <div className="mt-9 flex w-full flex-wrap items-center gap-x-5 gap-y-3 sm:mt-11">
+              <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-muted-foreground sm:text-[11px]">
+                AI · Product · Real-time
+              </span>
+            </div>
+          </Reveal>
+
+          <Reveal className="lg:order-1">
+            <div className="mb-3 flex items-center gap-2 text-[10px] font-semibold tracking-[0.16em] text-violet-300 sm:mb-4 sm:text-[11px]">
+              <span className="h-1.5 w-1.5 rounded-full bg-violet-300" aria-hidden="true" />
+              IN DEVELOPMENT
+            </div>
+            <div className="overflow-hidden rounded-xl border border-border bg-card sm:rounded-2xl">
+              <img
+                src="/intervue-demo.gif"
+                alt="Intervue interview training interface demonstrating a practice interview"
+                className="block h-auto w-full"
+                width={1300}
+                height={932}
+                loading="lazy"
+              />
+            </div>
+          </Reveal>
+        </article>
+
+        <article className="mt-24 grid items-center gap-10 sm:mt-28 sm:gap-12 lg:mt-36 lg:grid-cols-[0.78fr_1.22fr] lg:gap-16">
+          <Reveal className="flex flex-col items-start">
             <p className="text-[12px] font-semibold tracking-[0.2em] text-violet-300 sm:text-[13px]">
               TRIPS
             </p>
@@ -37,9 +80,9 @@ export function InStudio() {
                 Product · Web · Travel
               </span>
             </div>
-          </div>
+          </Reveal>
 
-          <div>
+          <Reveal delay={0.12}>
             <div className="mb-3 flex items-center justify-end gap-2 text-[10px] font-semibold tracking-[0.16em] text-violet-300 sm:mb-4 sm:text-[11px]">
               <span className="h-1.5 w-1.5 rounded-full bg-violet-300" aria-hidden="true" />
               COMING SOON
@@ -54,8 +97,8 @@ export function InStudio() {
                 loading="lazy"
               />
             </div>
-          </div>
-        </div>
+          </Reveal>
+        </article>
       </div>
     </section>
   );

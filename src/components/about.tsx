@@ -1,3 +1,5 @@
+import { Reveal } from "./reveal";
+
 export function About() {
   return (
     <section
@@ -5,7 +7,7 @@ export function About() {
       className="ambient-glow relative border-t border-border bg-background py-24 sm:py-28 lg:py-32"
     >
       <div className="relative z-10 mx-auto grid w-full max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[1fr_1.2fr] lg:items-center lg:gap-20 lg:px-8">
-        <div>
+        <Reveal>
           <div className="mb-6 flex items-center gap-3 sm:mb-8">
             <span className="flex h-7 min-w-7 items-center justify-center rounded-full border border-border bg-secondary px-2 text-[11px] font-semibold text-secondary-foreground">
               04
@@ -17,8 +19,11 @@ export function About() {
           <h2 className="text-[clamp(2rem,5vw,4.2rem)] font-semibold leading-[1.05] tracking-[-0.04em] text-foreground">
             Built by a software engineer, not a committee.
           </h2>
-        </div>
-        <div className="max-w-2xl rounded-xl border border-border bg-card/70 p-6 backdrop-blur-sm sm:p-8 lg:p-10">
+        </Reveal>
+        <Reveal
+          delay={0.12}
+          className="max-w-2xl rounded-xl border border-border bg-card/70 p-6 backdrop-blur-sm sm:p-8 lg:p-10"
+        >
           <p className="text-[17px] font-medium leading-[1.7] text-foreground sm:text-[19px]">
             Franzoni Studio was founded by Guilherme Franzoni, a full-stack software engineer with
             6+ years of experience building products for the web.
@@ -46,7 +51,7 @@ export function About() {
             </figcaption>
           </figure>
           {/* TODO: Add verified GitHub and LinkedIn profile URLs when available. */}
-        </div>
+        </Reveal>
       </div>
     </section>
   );

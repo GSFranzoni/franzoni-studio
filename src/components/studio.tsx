@@ -12,30 +12,27 @@ export function Studio() {
             01
           </span>
           <span className="text-[12px] font-medium uppercase tracking-[0.16em] text-muted-foreground sm:text-[13px]">
-            The studio
+            About Franzoni Studio
           </span>
         </div>
 
         <Reveal className="mx-auto mb-12 max-w-5xl sm:mb-16">
           <h2 className="text-center text-[clamp(2rem,5.4vw,4.5rem)] font-semibold leading-[1.03] tracking-[-0.04em] text-foreground">
-            Ideas are easy.
-            <br />
-            Making them work is the interesting part.
+            A small technology company, built around products.
           </h2>
         </Reveal>
 
         <div className="mx-auto grid max-w-5xl gap-6 md:grid-cols-2 md:gap-12">
           <Reveal delay={0.08}>
             <p className="max-w-xl text-[16px] font-medium leading-[1.75] text-foreground sm:text-[18px]">
-              Franzoni Studio is an independent software and product studio founded by Guilherme
-              Franzoni, built around a simple idea: good digital products should feel as considered
-              as they are well engineered.
+              Founded in 2026 by software engineer Guilherme Franzoni, Franzoni Studio is an
+              early-stage startup focused on software, SaaS, and artificial intelligence.
             </p>
           </Reveal>
           <Reveal delay={0.16}>
             <p className="max-w-xl text-[15px] leading-[1.75] text-muted-foreground sm:text-[17px]">
-              I work across design and engineering to turn ideas into websites, software, and
-              digital products that are useful, distinctive, and built to last.
+              We explore focused problems, build products around them, and improve those products
+              over time. The goal is to make technology useful, dependable, and ready to grow.
             </p>
           </Reveal>
         </div>

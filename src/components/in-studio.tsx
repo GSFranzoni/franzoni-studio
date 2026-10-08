@@ -8,7 +8,7 @@ function InStudioEyebrow() {
         03
       </span>
       <span className="text-[12px] font-medium uppercase tracking-[0.16em] text-muted-foreground sm:text-[13px]">
-        In the studio
+        Products &amp; experiments
       </span>
     </div>
   );
@@ -47,7 +47,7 @@ export function InStudio() {
               </div>
               <div className="mt-9 flex w-full flex-wrap items-center gap-x-5 gap-y-3 sm:mt-11">
                 <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-muted-foreground sm:text-[11px]">
-                  AI · Product · Real-time
+                  AI · Product engineering · Real-time
                 </span>
               </div>
             </Reveal>
@@ -93,8 +93,8 @@ export function InStudio() {
               </h2>
               <div className="mt-6 max-w-md space-y-5 sm:mt-7">
                 <p className="text-[14px] leading-[1.8] text-muted-foreground sm:text-[16px]">
-                  A travel discovery experience exploring how destinations, trips, and stories can
-                  come together in a more thoughtful way on the web.
+                  An early product concept exploring a more thoughtful way to discover destinations,
+                  trips, and travel stories on the web.
                 </p>
                 <p className="text-[13px] font-medium leading-relaxed text-foreground/75 sm:text-[14px]">
                   Designed and built at Franzoni Studio.
@@ -103,7 +103,7 @@ export function InStudio() {
 
               <div className="mt-9 flex w-full flex-wrap items-center gap-x-5 gap-y-3 sm:mt-11">
                 <span className="text-[10px] font-medium uppercase tracking-[0.14em] text-muted-foreground sm:text-[11px]">
-                  Product · Web · Travel
+                  Product exploration · Web · Travel
                 </span>
               </div>
             </Reveal>
@@ -111,7 +111,7 @@ export function InStudio() {
             <Reveal delay={0.12}>
               <div className="mb-3 flex items-center justify-end gap-2 text-[10px] font-semibold tracking-[0.16em] text-violet-300 sm:mb-4 sm:text-[11px]">
                 <span className="h-1.5 w-1.5 rounded-full bg-violet-300" aria-hidden="true" />
-                COMING SOON
+                CONCEPT IN DEVELOPMENT
               </div>
               <div className="overflow-hidden rounded-xl border border-border bg-card sm:rounded-2xl">
                 <img

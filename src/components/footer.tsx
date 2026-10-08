@@ -2,9 +2,10 @@ import { FranzoniMark, OrangeButton } from "./primitives";
 import { Reveal } from "./reveal";
 
 const FOOTER_LINKS = [
-  { label: "Studio", href: "#studio" },
-  { label: "Work", href: "#work" },
-  { label: "About", href: "#about" },
+  { label: "Company", href: "#studio" },
+  { label: "Products", href: "#work" },
+  { label: "Technology", href: "#technology" },
+  { label: "Founder", href: "#about" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -21,13 +22,13 @@ export function Footer() {
         <div className="flex flex-col gap-8 pb-12 sm:pb-16 lg:flex-row lg:items-end lg:justify-between lg:pb-20">
           <Reveal className="max-w-2xl">
             <p className="mb-5 text-[12px] font-medium uppercase tracking-[0.14em] text-muted-foreground sm:mb-8 sm:text-[13px]">
-              Have something in mind?
+              Contact
             </p>
             <h2 className="text-[clamp(2rem,7vw,4.5rem)] font-medium leading-[1.04] tracking-[-0.04em] sm:text-[clamp(2.5rem,5vw,4.5rem)]">
-              Let&apos;s make it real.
+              Building something in software or AI?
             </h2>
             <p className="mt-5 max-w-xl text-[14px] leading-[1.7] text-muted-foreground sm:text-[16px]">
-              Have a website, product, or idea you&apos;d like to build? Tell me about it.
+              For product conversations, partnerships, and startup inquiries, contact Franzoni Studio.
             </p>
           </Reveal>
 
@@ -35,7 +36,7 @@ export function Footer() {
             delay={0.14}
             className="flex flex-col items-start gap-4 sm:flex-row sm:items-center lg:flex-col lg:items-end"
           >
-            <OrangeButton label="Start a project" href="mailto:guilherme@franzoni.tech" />
+            <OrangeButton label="Email the founder" href="mailto:guilherme@franzoni.tech" />
             <a
               href="mailto:guilherme@franzoni.tech"
               className="text-[14px] text-muted-foreground transition-colors duration-300 hover:text-foreground"

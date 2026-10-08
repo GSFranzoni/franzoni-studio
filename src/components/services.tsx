@@ -4,26 +4,26 @@ import { Reveal } from "./reveal";
 
 const SERVICES = [
   {
-    title: "Websites",
+    title: "Product engineering",
     description:
-      "Websites with a strong point of view — thoughtfully designed, fast, responsive, and built around the business behind them.",
+      "End-to-end software engineering for digital products, from clear interfaces to reliable application foundations.",
   },
   {
-    title: "Software",
+    title: "SaaS platforms",
     description:
-      "Digital products and custom applications shaped around real workflows, real users, and real problems.",
+      "Subscription software designed around specific user needs, with room to evolve as those needs change.",
   },
   {
-    title: "AI & Automation",
+    title: "Applied AI",
     description:
-      "AI where it adds something useful — from intelligent product experiences to tools and workflows that remove repetitive work.",
+      "AI features built into useful product experiences, with a focus on practical workflows and clear outcomes.",
   },
 ];
 
 export function Services() {
   return (
     <section
-      id="services"
+      id="technology"
       className="ambient-glow relative flex min-h-[80svh] items-center justify-center overflow-hidden border-t border-border bg-background py-24 lg:min-h-[calc(100svh-var(--site-header-height))]"
     >
       <div className="relative z-10 mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8">
@@ -33,12 +33,12 @@ export function Services() {
               02
             </span>
             <span className="text-[12px] font-medium uppercase tracking-[0.16em] text-muted-foreground sm:text-[13px]">
-              What I do
+              Technology & expertise
             </span>
           </div>
           <Reveal>
             <h2 className="mx-auto max-w-3xl text-[clamp(2rem,5vw,4rem)] font-semibold leading-[1.04] tracking-[-0.04em] text-foreground">
-              From the first idea to the final build.
+              Engineering products from the problem up.
             </h2>
           </Reveal>
         </div>
@@ -61,6 +61,9 @@ export function Services() {
             </Reveal>
           ))}
         </div>
+        <p className="mt-8 text-center text-[13px] text-muted-foreground">
+          Current web stack: React · TypeScript · Vite
+        </p>
       </div>
     </section>
   );
